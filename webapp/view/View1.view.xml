@@ -1,11 +1,35 @@
-<mvc:View controllerName="ovly.random-cat.controller.View1" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+<mvc:View controllerName="ovly.random-cat.controller.View1" xmlns:s="sap.m.semantic" xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+	xmlns="sap.m">
 	<Shell id="shell">
-		<App id="app">
-			<pages>
-				<Page id="page" title="{i18n>title}">
-					<content></content>
-				</Page>
-			</pages>
-		</App>
+		<SplitContainer id="app">
+			<masterPages>
+				<s:MasterPage title="Random Cats">
+					<s:content>
+						<List>
+							<items>
+								<StandardListItem title="3" icon="https://purr.objects-us-east-1.dream.io/i/QAP6w.jpg"/>
+								<StandardListItem title="2" icon="https://purr.objects-us-east-1.dream.io/i/img_0005.jpg"/>
+								<StandardListItem title="1" icon="https://purr.objects-us-east-1.dream.io/i/L5rgK.jpg"/>
+							</items>
+						</List>
+					</s:content>
+					<s:customFooterContent>
+						<Button icon="sap-icon://delete" />
+					</s:customFooterContent>
+					<s:addAction>
+						<s:AddAction/>
+					</s:addAction>
+				</s:MasterPage>
+			</masterPages>
+			<detailPages>
+				<s:DetailPage title="2" showFooter="false">
+					<s:content>
+						<HBox justifyContent="Center">
+							<Image width="300px" src="https://purr.objects-us-east-1.dream.io/i/img_0005.jpg"/>
+						</HBox>
+					</s:content>
+				</s:DetailPage>
+			</detailPages>
+		</SplitContainer>
 	</Shell>
 </mvc:View>
