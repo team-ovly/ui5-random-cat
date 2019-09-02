@@ -5,7 +5,7 @@
 			<masterPages>
 				<s:MasterPage title="Random Cats">
 					<s:content>
-						<List id="cat-list">
+						<List id="cat-list" includeItemInSelection="false" >
 							<items>
 					
 							</items>
@@ -20,10 +20,10 @@
 				</s:MasterPage>
 			</masterPages>
 			<detailPages>
-				<s:DetailPage title="2" showFooter="false">
+				<s:DetailPage id="detail-page" title="" showFooter="false">
 					<s:content>
 						<HBox justifyContent="Center">
-							<Image width="300px" src=""/>
+							<Image id="cat-image" width="300px" src=""/>
 						</HBox>
 					</s:content>
 				</s:DetailPage>
