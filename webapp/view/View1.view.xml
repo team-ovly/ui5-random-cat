@@ -5,19 +5,17 @@
 			<masterPages>
 				<s:MasterPage title="Random Cats">
 					<s:content>
-						<List>
+						<List id="cat-list">
 							<items>
-								<StandardListItem title="3" icon="https://purr.objects-us-east-1.dream.io/i/QAP6w.jpg"/>
-								<StandardListItem title="2" icon="https://purr.objects-us-east-1.dream.io/i/img_0005.jpg"/>
-								<StandardListItem title="1" icon="https://purr.objects-us-east-1.dream.io/i/L5rgK.jpg"/>
+					
 							</items>
 						</List>
 					</s:content>
 					<s:customFooterContent>
-						<Button icon="sap-icon://delete" />
+						<Button icon="sap-icon://delete" press="onEmpty" />
 					</s:customFooterContent>
 					<s:addAction>
-						<s:AddAction/>
+						<s:AddAction press="onAdd" />
 					</s:addAction>
 				</s:MasterPage>
 			</masterPages>
@@ -25,7 +23,7 @@
 				<s:DetailPage title="2" showFooter="false">
 					<s:content>
 						<HBox justifyContent="Center">
-							<Image width="300px" src="https://purr.objects-us-east-1.dream.io/i/img_0005.jpg"/>
+							<Image width="300px" src=""/>
 						</HBox>
 					</s:content>
 				</s:DetailPage>
