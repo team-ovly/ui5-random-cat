@@ -1,0 +1,35 @@
+{
+    "application": {
+        "id": "",
+        "title": "ovly.random-cat",
+        "description": "Gatos randômicos com histórico em lista",
+        "type": "SAP_UI5_Component",
+        "componentUrl": "/",
+        "appUrl": "#Cat-Random",
+        "navigationComponentName": "ovly.random-cat",
+        "intentSemanticObject": "Cat",
+        "intentAction": "Random",
+        "html5ApplicationName": "randomcat",
+        "HCPParentApplicationName": ""
+    },
+    "assignment": {
+        "groups": [
+            "267438e3-2c68-49cb-9b68-9838fdf4da73-1567441068377"
+        ],
+        "contentPackages": [
+            "88b7956e-1ca1-4113-8c51-33c48c8f3f77-1567441001482"
+        ],
+        "categories": []
+    },
+    "tile": {
+        "type": "StaticTile",
+        "title": "Random Cat",
+        "subtitle": "History list and Semantic Controls",
+        "searchKeywords": "Random Cat,History list and Semantic Controls",
+        "displayIconUrl": "sap-icon://list",
+        "displayInfoText": "",
+        "size": "1x1",
+        "serviceURL": "",
+        "refreshInterval": ""
+    }
+}
